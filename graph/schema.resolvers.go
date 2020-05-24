@@ -16,7 +16,7 @@ func (r *mutationResolver) RegisterUser(ctx context.Context) (*model.RegisterUse
 }
 
 func (r *queryResolver) Ping(ctx context.Context) (*model.Pong, error) {
-	panic(fmt.Errorf("not implemented"))
+	return r.ping(ctx)
 }
 
 // Mutation returns generated.MutationResolver implementation.
