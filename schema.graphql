@@ -1,0 +1,15 @@
+type Pong {
+    pong: Boolean!
+}
+
+type Query {
+    ping: Pong
+}
+
+type RegisterUserOutput {
+    success: Boolean!
+}
+
+type Mutation {
+    registerUser: RegisterUserOutput
+}
